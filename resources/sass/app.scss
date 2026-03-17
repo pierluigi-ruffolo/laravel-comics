@@ -6,3 +6,34 @@
 
 // Bootstrap
 @import "bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    height: 80px;
+}
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+footer {
+    height: 100px;
+    flex-shrink: 0;
+}
+
+/* header */
+
+.img-logo {
+    height: 45px;
+}
