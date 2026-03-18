@@ -3,12 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    $comics = config('comics');
+    $top_six = array_slice($comics, 0, 6);
+    return view('home', compact('top_six'));
 })->name('home');
 
 
 Route::get("/comics", function () {
-    return view('comics');
+    $comics = config('comics');
+    return view('comics', compact('comics'));
 })->name('comics');
 
 

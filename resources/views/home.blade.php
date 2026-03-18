@@ -4,12 +4,6 @@
 home
 @endsection
 
-@php
-$comics = config('comics');
-$primiSei = array_slice($comics, 0, 6);
-@endphp
-
-
 @section ('content')
 <div class="jumbo">
     <x-button class="btn-current-series">
@@ -19,7 +13,7 @@ $primiSei = array_slice($comics, 0, 6);
 <div class="section-comics-home">
     <div class="container p-5">
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 g-lg-4">
-            @foreach ($primiSei as $comic)
+            @foreach ($top_six as $comic)
             <div class="col">
                 <x-card>
                     <x-slot:img>{{$comic["thumb"]}}</x-slot>

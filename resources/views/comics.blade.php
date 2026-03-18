@@ -4,9 +4,6 @@
 comics
 @endsection
 
-@php
-$comics = config('comics');
-@endphp
 @section ('content')
 <div class="container p-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-4">
