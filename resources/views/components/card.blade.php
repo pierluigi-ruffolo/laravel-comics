@@ -1,13 +1,13 @@
 <div class="comic-card h-100">
     <div class="img-container">
         <img src="{{ $img }}" alt="{{ $title }}">
-        @if(isset($price))
-        <div class="price-badge">{{ $price }}</div>
+    </div>
+    <div>
+        @if (isset($price))
+        <span>{{$price}}</span>
         @endif
     </div>
-
     <div class="card-body pt-2">
-
         <h5 class="comic-title">
             {{ $title }}
         </h5>
