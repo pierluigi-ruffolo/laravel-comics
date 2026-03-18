@@ -15,5 +15,4 @@
         <span class="comic-series">{{ $series }}</span>
         @endif
     </div>
-    {{$slot}}
 </div>
